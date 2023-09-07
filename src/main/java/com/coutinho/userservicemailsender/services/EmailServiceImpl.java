@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-
 import java.io.File;
 import java.util.Map;
 
@@ -155,6 +154,7 @@ public class EmailServiceImpl implements EmailService{
             helper.setSubject(NEW_USER_ACCOUNT_VERIFICATION);
             helper.setFrom(fromEmail);
             helper.setTo(to);
+
 //            helper.setText(text, true);
 
             Context context = new Context();
